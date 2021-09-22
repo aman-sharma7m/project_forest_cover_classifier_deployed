@@ -5,6 +5,11 @@ from wsgiref import simple_server
 from flask_cors import CORS,cross_origin
 import numpy as np
 import pandas as pd
+from application_logging import logger
+from training_Validation_Insertion import train_validation
+
+
+
 
 app=Flask(__name__)
 CORS(app)
@@ -28,8 +33,8 @@ def predictRouteClient():
 
 
 
-port=int(os.getenv('PORT',5001))
-if __name__=='__main__':
-    host='0.0.0.0'
-    httpd=simple_server.make_server(host,port,app)
-    httpd.serve_forever()
+# port=int(os.getenv('PORT',5001))
+# if __name__=='__main__':
+#     host='0.0.0.0'
+#     httpd=simple_server.make_server(host,port,app)
+#     httpd.serve_forever()
