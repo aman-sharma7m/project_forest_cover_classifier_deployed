@@ -96,7 +96,7 @@ class Raw_Data_validation:
                                       Output: None
                                       On Failure: OSError
 
-                                       Written By: iNeuron Intelligence
+                                       Written By: Aman
                                       Version: 1.0
                                       Revisions: None
 
@@ -126,7 +126,7 @@ class Raw_Data_validation:
                                             Output: None
                                             On Failure: OSError
 
-                                             Written By: iNeuron Intelligence
+                                             Written By: Aman
                                             Version: 1.0
                                             Revisions: None
 
@@ -156,7 +156,7 @@ class Raw_Data_validation:
                                             Output: None
                                             On Failure: OSError
 
-                                             Written By: iNeuron Intelligence
+                                             Written By: Aman
                                             Version: 1.0
                                             Revisions: None
 
@@ -185,7 +185,7 @@ class Raw_Data_validation:
                                             Output: None
                                             On Failure: OSError
 
-                                             Written By: iNeuron Intelligence
+                                             Written By: Aman
                                             Version: 1.0
                                             Revisions: None
 
@@ -229,7 +229,7 @@ class Raw_Data_validation:
                     Output: None
                     On Failure: Exception
 
-                     Written By: iNeuron Intelligence
+                     Written By: Aman
                     Version: 1.0
                     Revisions: None
 
@@ -282,7 +282,7 @@ class Raw_Data_validation:
                           Output: None
                           On Failure: Exception
 
-                           Written By: iNeuron Intelligence
+                           Written By: Aman
                           Version: 1.0
                           Revisions: None
 
@@ -319,7 +319,7 @@ class Raw_Data_validation:
                                   Output: None
                                   On Failure: Exception
 
-                                   Written By: iNeuron Intelligence
+                                   Written By: Aman
                                   Version: 1.0
                                   Revisions: None
 
