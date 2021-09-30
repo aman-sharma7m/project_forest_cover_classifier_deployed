@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 from application_logging import logger
 from training_Validation_Insertion import train_validation
-
+from trainingModel import trainModel
 
 
 
@@ -24,7 +24,25 @@ def home():
 @app.route('/train',methods=['POST'])
 @cross_origin()
 def trainRouteClient():
-    pass
+    try:
+        if request.json['folder_path'] is not None:
+            path=request.json['folder_path']
+            train_valObj=train_validation(path)
+
+            train_valObj.train_validation()
+
+            trainModelObj=trainModel()
+            trainModelObj.trainingModel()
+
+    except KeyError:
+        return Response('error Ocurred %s'% KeyError)
+    except ValueError:
+        return Response('error Occured %s'% ValueError)
+    except Exception as e:
+        return Response('Error Ocurred %s' % e)
+    return Response('Training Successfull!!!')
+
+
 
 @app.route('/predict',methods=['POST'])
 @cross_origin()

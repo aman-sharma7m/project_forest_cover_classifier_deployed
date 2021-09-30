@@ -2,7 +2,7 @@ from datetime import datetime
 from application_logging import logger
 from Training_Raw_data_validation.rawValidation import Raw_Data_validation
 from DataTypeValidation_Insertion_Training.DataTypeValidation import dBOperation
-
+from DataTransform_Training.DataTransformation import dataTransform
 
 class train_validation:
     def init(self,path):
@@ -32,6 +32,11 @@ class train_validation:
             self.raw_data.validateMissingValuesInWholeColumn()
 
             self.log_writer.log(self.file_object,'Raw Data Validation Complete!!')
+            self.log_writer.log(self.file_object, "Starting Data Transforamtion!!")
+            # replacing blanks in the csv file with "Null" values to insert in table
+            self.dataTransform.addQuotesToStringValuesInColumn()
+
+            self.log_writer.log(self.file_object, "DataTransformation Completed!!!")
 
             self.log_writer.log(self.file_object,"Creating Training_Database and tables on the basis of given schema!!!")
 
@@ -60,3 +65,4 @@ class train_validation:
         except Exception as e:
             self.file_object.close()
             raise e
+
