@@ -6,7 +6,7 @@ from sklearn.metrics  import roc_auc_score,accuracy_score
 class Model_Finder:
     """
                 This class shall  be used to find the model with best accuracy and AUC score.
-                Written By: iNeuron Intelligence
+                Written By: Aman
                 Version: 1.0
                 Revisions: None
 
@@ -26,7 +26,7 @@ class Model_Finder:
                                 Output: The model with the best parameters
                                 On Failure: Raise Exception
 
-                                Written By: iNeuron Intelligence
+                                Written By: Aman
                                 Version: 1.0
                                 Revisions: None
 
@@ -74,7 +74,7 @@ class Model_Finder:
                                         Output: The model with the best parameters
                                         On Failure: Raise Exception
 
-                                        Written By: iNeuron Intelligence
+                                        Written By: Aman
                                         Version: 1.0
                                         Revisions: None
 
@@ -124,7 +124,7 @@ class Model_Finder:
                                                 Output: The best model name and the model object
                                                 On Failure: Raise Exception
 
-                                                Written By: iNeuron Intelligence
+                                                Written By: Aman
                                                 Version: 1.0
                                                 Revisions: None
 
@@ -141,13 +141,13 @@ class Model_Finder:
                 self.xgboost_score = accuracy_score(test_y, self.prediction_xgboost)
                 self.logger_object.log(self.file_object, 'Accuracy for XGBoost:' + str(self.xgboost_score))  # Log AUC
             else:
-                self.xgboost_prediction_random_forestscore = roc_auc_score(test_y, self.prediction_xgboost, multi_class='ovr') # AUC for XGBoost
+                self.xgboost_score = roc_auc_score(test_y, self.prediction_xgboost, multi_class='ovr') # AUC for XGBoost
                 self.logger_object.log(self.file_object, 'AUC for XGBoost:' + str(self.xgboost_score)) # Log AUC
 
             # create best model for Random Forest
             self.random_forest=self.get_best_params_for_random_forest(train_x,train_y)
             # we will using predict_proba in case of a multiclass classification as roc_auc_score needs predict_proba to calculate the score
-            self.=self.random_forest.predict_proba(test_x) # prediction using the Random Forest Algorithm
+            self.prediction_random_forest=self.random_forest.predict_proba(test_x) # prediction using the Random Forest Algorithm
 
             if len(test_y.unique()) == 1:#if there is only one label in y, then roc_auc_score returns error. We will use accuracy in that case
                 self.random_forest_score = accuracy_score(test_y,self.prediction_random_forest)
