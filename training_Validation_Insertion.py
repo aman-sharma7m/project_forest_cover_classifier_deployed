@@ -5,7 +5,7 @@ from DataTypeValidation_Insertion_Training.DataTypeValidation import dBOperation
 from DataTransform_Training.DataTransformation import dataTransform
 
 class train_validation:
-    def init(self,path):
+    def __init__(self,path):
         self.log_writer=logger.App_Logger()
         self.file_object=open('Training_Logs/Training_Main_log.txt','a+')
         self.raw_data=Raw_Data_validation(path)

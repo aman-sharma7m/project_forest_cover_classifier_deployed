@@ -87,6 +87,7 @@ def predictRouteClient():
 
 port=int(os.getenv('PORT',5001))
 if __name__=='__main__':
+    # app.run(port=8080, debug=True)
     host='0.0.0.0'
     httpd=simple_server.make_server(host,port,app)
     httpd.serve_forever()
