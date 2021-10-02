@@ -8,10 +8,13 @@ import pandas as pd
 from application_logging import logger
 from training_Validation_Insertion import train_validation
 from trainingModel import trainModel
-
+from prediction_Validation_Insertion import pred_validation
+from predictFromModel import prediction
+import flask_monitoringdashboard as dashboard
 
 
 app=Flask(__name__)
+dashboard.bind(app)
 CORS(app)
 
 
@@ -47,7 +50,38 @@ def trainRouteClient():
 @app.route('/predict',methods=['POST'])
 @cross_origin()
 def predictRouteClient():
-    pass
+    try:
+        if request.json is not None: #if from postman
+            path= request.json['filepath']
+
+            pred_val=pred_validation(path)
+
+            pred_val.prediction_validation()
+
+            pred = prediction(path)
+
+            path=pred.predictionFromModel()
+            return Response('Prediction File Created at '+path+'!!!')
+
+        elif request.form is not None: #from the web
+            path=request.form['filepath']
+
+            pred_val = pred_validation(path)
+
+            pred_val.prediction_validation()
+
+            pred=prediction(path)
+
+            path = pred.predictionFromModel()
+            return Response('Prediction File Created at ' + path + '!!!')
+
+    except ValueError:
+        return Response("Error Occurred! %s" % ValueError)
+    except KeyError:
+        return Response("Error Occurred! %s" % KeyError)
+    except Exception as e:
+        return Response("Error Occurred! %s" % e)
+
 
 
 
