@@ -241,7 +241,7 @@ class Raw_Data_validation:
         self.deleteExistingGoodDataTrainingFolder()
         # create new directories
         self.createDirectoryForGoodBadRawData()
-        onlyfiles = [f for f in listdir(self.Batch_Directory)]
+        onlyfiles = [f for f in listdir(self.Batch_directory)]
         try:
             f = open("Training_Logs/nameValidationLog.txt", 'a+')
             for filename in onlyfiles:

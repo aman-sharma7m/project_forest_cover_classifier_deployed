@@ -1,0 +1,11 @@
+2021-10-03/01:40:39		 forest_cover_28011990_120210.csv: Quotes added successfully!!
+2021-10-03/01:40:40		 forest_cover_28011991_120211.csv: Quotes added successfully!!
+2021-10-03/01:40:40		 forest_cover_28011992_120212.csv: Quotes added successfully!!
+2021-10-03/01:40:40		 forest_cover_28011993_120213.csv: Quotes added successfully!!
+2021-10-03/01:40:40		 forest_cover_28011994_120214.csv: Quotes added successfully!!
+2021-10-03/01:40:40		 forest_cover_28011995_120215.csv: Quotes added successfully!!
+2021-10-03/01:40:40		 forest_cover_28011996_120216.csv: Quotes added successfully!!
+2021-10-03/01:40:40		 forest_cover_28011997_120217.csv: Quotes added successfully!!
+2021-10-03/01:40:41		 forest_cover_28011998_120218.csv: Quotes added successfully!!
+2021-10-03/01:40:41		 forest_cover_28011999_120219.csv: Quotes added successfully!!
+2021-10-03/01:40:41		 forest_cover_28012000_120220.csv: Quotes added successfully!!

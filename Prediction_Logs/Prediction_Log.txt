@@ -1,0 +1,45 @@
+2021-10-03/05:12:24		Start of Validation on files for prediction!!
+2021-10-03/05:12:51		Start of Validation on files for prediction!!
+2021-10-03/05:12:51		Raw Data Validation Complete!!
+2021-10-03/05:12:51		Creating Prediction_Database and tables on the basis of given schema!!!
+2021-10-03/05:12:51		Table creation Completed!!
+2021-10-03/05:12:51		Insertion of Data into Table started!!!!
+2021-10-03/05:12:51		Insertion in Table completed!!!
+2021-10-03/05:12:51		Deleting Good Data Folder!!!
+2021-10-03/05:12:51		Good_Data folder deleted!!!
+2021-10-03/05:12:51		Moving bad files to Archive and deleting Bad_Data folder!!!
+2021-10-03/05:12:51		Bad files moved to archive!! Bad folder Deleted!!
+2021-10-03/05:12:51		Validation Operation completed!!
+2021-10-03/05:12:51		Extracting csv file from table
+2021-10-03/05:12:51		Start of Prediction
+2021-10-03/05:12:51		Entered the get_data method of the Data_Getter class
+2021-10-03/05:12:51		Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-10-03/05:12:51		Entered the load_model method of the File_Operation class
+2021-10-03/05:12:51		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2021-10-03/05:12:51		Entered the find_correct_model_file method of the File_Operation class
+2021-10-03/05:12:51		Exited the find_correct_model_file method of the Model_Finder class.
+2021-10-03/05:12:51		Entered the load_model method of the File_Operation class
+2021-10-03/05:12:51		Model File XGBoost0 loaded. Exited the load_model method of the Model_Finder class
+2021-10-03/05:12:52		Error occured while running the prediction!! Error:: [Errno 2] No such file or directory: 'Prediction_Output_File/Predictions.csv'
+2021-10-03/05:13:23		Start of Validation on files for prediction!!
+2021-10-03/05:13:23		Raw Data Validation Complete!!
+2021-10-03/05:13:23		Creating Prediction_Database and tables on the basis of given schema!!!
+2021-10-03/05:13:23		Table creation Completed!!
+2021-10-03/05:13:23		Insertion of Data into Table started!!!!
+2021-10-03/05:13:23		Insertion in Table completed!!!
+2021-10-03/05:13:23		Deleting Good Data Folder!!!
+2021-10-03/05:13:23		Good_Data folder deleted!!!
+2021-10-03/05:13:23		Moving bad files to Archive and deleting Bad_Data folder!!!
+2021-10-03/05:13:23		Bad files moved to archive!! Bad folder Deleted!!
+2021-10-03/05:13:23		Validation Operation completed!!
+2021-10-03/05:13:23		Extracting csv file from table
+2021-10-03/05:13:23		Start of Prediction
+2021-10-03/05:13:23		Entered the get_data method of the Data_Getter class
+2021-10-03/05:13:23		Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-10-03/05:13:23		Entered the load_model method of the File_Operation class
+2021-10-03/05:13:23		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2021-10-03/05:13:23		Entered the find_correct_model_file method of the File_Operation class
+2021-10-03/05:13:23		Exited the find_correct_model_file method of the Model_Finder class.
+2021-10-03/05:13:23		Entered the load_model method of the File_Operation class
+2021-10-03/05:13:23		Model File XGBoost0 loaded. Exited the load_model method of the Model_Finder class
+2021-10-03/05:13:23		End of Prediction
